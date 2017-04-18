@@ -1,0 +1,107 @@
+<IfModule mod_rewrite.c>
+
+
+RewriteBase /http://vybertvar.6f.sk/
+
+Options +FollowSymlinks
+RewriteEngine On
+
+
+RewriteCond %{HTTP_HOST} ^vybertvar\.6f\.sk
+RewriteRule (.*) http://www.vybertvar.6f.sk/$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} top/
+RewriteRule top/ /top.php
+RewriteRule ^top$ http://vybertvar.6f.sk/top/ [R]
+
+
+#poradie
+
+RewriteCond %{REQUEST_URI} poradie/([0-9]+)/
+RewriteRule poradie/([0-9]+)/ /poradie.php?strana=$1
+RewriteRule ^poradie/([0-9]+)$ http://vybertvar.6f.sk/poradie/$1/ [R]
+
+RewriteCond %{REQUEST_URI} poradie/
+RewriteRule poradie/ /poradie.php
+RewriteRule ^poradie$ http://vybertvar.6f.sk/poradie/ [R]
+
+#PROFIL
+#RewriteCond %{REQUEST_URI} profil/([0-9][0-9][0-9][0-9][0-9])/
+RewriteRule profil/([0-9][0-9][0-9][0-9][0-9])/ /profil.php?obraz=$1
+RewriteRule ^profil/([0-9][0-9][0-9][0-9][0-9])$ http://vybertvar.6f.sk/profil/$1/ [R]
+
+#STATISTIKA
+RewriteCond %{REQUEST_URI} statistika/
+RewriteRule statistika/ /statistika.php
+RewriteRule ^statistika$ http://vybertvar.6f.sk/statistika/ [R]
+
+
+#PRAVIDLA
+RewriteCond %{REQUEST_URI} pravidla/
+RewriteRule pravidla/ /podmienky.php
+RewriteRule ^pravidla$ http://vybertvar.6f.sk/pravidla/ [R]
+
+#ULOZ
+RewriteCond %{REQUEST_URI} uloz/
+RewriteRule uloz/ /novyObrazok.php
+RewriteRule ^uloz$ http://vybertvar.6f.sk/uloz/ [R]
+
+#PRIDAJ FOTO
+RewriteCond %{REQUEST_URI} pridaj/
+RewriteRule pridaj/ /pridajFoto.php
+RewriteRule ^pridaj$ http://vybertvar.6f.sk/pridaj/ [R]
+
+#OVERENIE
+#RewriteCond %{REQUEST_URI} overenie/([0-9][0-9][0-9][0-9][0-9])/([0-9][0-9][0-9][0-9][0-9])/
+#RewriteRule overenie/([0-9][0-9][0-9][0-9][0-9])/([0-9][0-9][0-9][0-9][0-9])/ /over.php?img1=$1&img2=$2
+#RewriteRule ^overenie/([0-9][0-9][0-9][0-9][0-9])/([0-9][0-9][0-9][0-9][0-9])$ http://vybertvar.6f.sk/overenie/$1/$2/ [R]
+RewriteRule overenie/([a-z,A-Z,0-9]+)/([a-z,A-Z,0-9]+)/ /over.php?img1=$1&img2=$2
+RewriteRule ^overenie/([a-z,A-Z,0-9]+)/([a-z,A-Z,0-9]+)$ http://vybertvar.6f.sk/overenie/$1/$2/ [R]
+
+
+#Prihlas
+RewriteCond %{REQUEST_URI} prihlas/
+RewriteRule prihlas/ /login.php
+RewriteRule ^prihlas$ http://vybertvar.6f.sk/prihlas/ [R]
+#RewriteRule ^prihlas$ http://vybertvar.6f.sk/admin/login.php [R]
+
+#admin
+RewriteCond %{REQUEST_URI} admin/
+RewriteRule admin/ /admin.php
+RewriteRule ^admin$ http://vybertvar.6f.sk/admin/ [R]
+
+#odhlas
+RewriteCond %{REQUEST_URI} odhlas/
+RewriteRule odhlas/ /odhlas.php
+RewriteRule ^odhlas$ http://vybertvar.6f.sk/odhlas/ [R]
+
+#pocitaj
+RewriteCond %{REQUEST_URI} pocitaj/
+RewriteRule pocitaj/ /pocitaj.php
+RewriteRule ^pocitaj$ http://vybertvar.6f.sk/pocitaj/ [R]
+
+RewriteCond %{REQUEST_URI} domov/
+RewriteRule domov/ /index.php
+
+
+#RewriteCond %{REQUEST_FILENAME} !index.php
+#RewriteCond %{REQUEST_FILENAME} -f
+#RewriteRule .* - [L]
+
+
+
+#RewriteRule ^domov/?$ http://vybertvar.6f.sk/index.php [NC,L]
+
+
+
+#RewriteRule ^obrazok_dir$ http://vybertvar.6f.sk/obrazok_dir.php [L]
+#RewriteRule ^velkost$ http://vybertvar.6f.sk/velkost.php [L]
+
+
+#RewriteRule ^profil-([^/.]+)$ http://vybertvar.6f.sk/profil.php?obraz=$1 [NC,L]
+
+
+
+
+
+</IfModule>

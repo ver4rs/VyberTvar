@@ -1,0 +1,488 @@
+table tr {
+	text-align: center;
+}
+
+#hodnot {
+	text-align : center;
+}
+
+
+a 		{ color: #888; text-decoration: none; }
+a:hover { color: #DF5045; text-shadow: 1px 1px 0 #fff; }
+
+
+
+
+body {
+	margin:  2px;
+	background: #f5f5ed url(../images/bg.png);
+	font: italic 12px 'Trebuchet MS', Georgia, serif;
+	width: auto;
+}
+small {
+	font: normal 28px 'Dancing Script', serif; color: #afafaf;
+
+	text-shadow: 1px 1px 0 #fff;
+}
+/*
+horna lista
+*/
+@media screen and (max-width: 1000px) {
+	.horna_lista {
+		min-width: 1000px;
+	}
+}
+@media screen and (max-width: 800px) {
+	.horna_lista {
+		/*width: 90%;*/
+		min-width: 800px;
+	}
+}
+.horna_lista {
+	text-align: center;
+	/*position: absolute;*/
+}
+.horna_lista h1 {
+	text-align: left;
+	margin-top: 0px;
+
+}
+.horna_lista h1 small a{
+	margin-left: 50px;
+
+}
+
+h1 {
+	font: normal 60px 'Dancing Script', serif;
+	color: #DF5045;
+	position: relative;
+	margin-left: 0px;
+	top: -40px;
+	margin-bottom: -20px;
+	text-shadow: 1px 1px 0 #CF3226, 2px 2px 0 #ccc, 3px 3px 0 #ccc, 4px 4px 0 #c3c3c3;
+}
+
+small {
+	-webkit-transform: rotate(1.0deg);
+	-moz-transform: rotate(1.0deg);
+	-o-transform: rotate(1.0deg);
+	transform: rotate(1.0deg);
+
+}
+
+h1 {
+	-webkit-transform: rotate(-2.3deg);
+	-moz-transform: rotate(-2.3deg);
+	-o-transform: rotate(-2.3deg);
+	transform: rotate(-2.3deg);
+}
+
+/*
+koniec horna lista
+*/
+
+/*
+profil
+*/
+
+.ukaz-profil{
+	margin-left: 60px;
+	margin-top: 10px;
+	padding: 10px;
+	border: 0px solid;
+	display: block;
+	/*border-radius: 10px;
+	moz-border-radius: 10px;
+	webkit-border-radius: 10px;*/
+}
+
+#profil-lavo {
+	float: left;
+	padding-left: 10px;
+	padding-right: 20px;
+	text-align: center;
+}
+
+#profil-lavo img {
+	width: 380px;
+	/*height: 720px;
+	border-radius: 10px;
+	moz-border-radius: 10px;
+	webkit-border-radius: 10px;*/
+}
+
+#profil-lavo p {
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 12px;
+    font-weight: bold;
+}
+
+#profil-lavo #hra-pocet {
+	margin-right: 15px;
+}
+
+#profil-pravo {
+
+}
+
+#profil-pravo span {
+	font-size: 25px;
+	font-family: Arial, Helvetica, Sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #464646;
+}
+
+#profil-pravo #galeria {
+	display: block;
+	margin: 10px;
+}
+#profil-pravo #galeria #galeria-obrazok {
+	display: block;
+
+}
+#profil-pravo #galeria #galeria-obrazok a img {
+	margin: 5px;
+	display: inline;
+
+}
+#profil-pravo #galeria #galeria-obrazok a img:hover {
+	opacity: 0.7;
+}
+/*
+hodnot
+*/
+
+#hodnot {
+
+}
+
+#tabula_vyber {
+	padding-top: 5px;
+	width: 680px;
+	/*border: 1px solid #F2F2F2;
+	background-color: #F2F2F2;*/
+	border-radius: 10px;
+	moz-border-radius: 10px;
+	webkit-border-radius: 10px;
+}
+
+td a img {
+	/*
+	border-radius: 10px;
+	moz-border-radius: 10px;
+	webkit-border-radius: 10px;
+	*/
+}
+
+/*
+	TOP
+*/
+
+.top {
+	margin-left: 20px;
+	margin-top: 20px;
+
+}
+
+
+.top #miesto {
+	text-align: top;
+	font-size: 18px;
+	font-family: Arial, Helvetica, Sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #565656;
+    padding-left: 20px;
+    position: absolute;
+    opacity: 0.65;
+}
+
+.top table tr {
+	text-align: center;
+}
+/*
+	koniec top:
+*/
+
+
+
+/*
+poradie
+*/
+.celokPoradie {
+	/*text-align: center;*/
+}
+
+#poradie {
+	margin-top: 0px;
+	min-width: 1000px;
+}
+.celokPoradie #dievca-banner-2 {
+	margin-left:120px;
+}
+.celokPoradie #dievca-banner {
+	/*margin-left: 20px;
+	margin-top: 10px;
+	float: left;
+	width: 170px;*/
+}
+
+.riadok {
+	display: block;
+}
+
+#stlpec a {
+		font-size: 13px;
+	font-family: Arial, Helvetica, Sans-serif;
+    /*text-transform: uppercase;*/
+    font-weight: bold;
+    color: #565656;
+}
+
+#stlpec {
+	display: inline-block;
+	margin: 0px 0px 0px 10px;
+	text-align: center;
+	/*margin: 10px 10px;
+	_margin: 0 5px 0 5px; /* IE6 hack.. zmenit display nevyhovuje, toto mu bude musiet stacit.. */
+	font-size: 13px;
+	font-family: Arial, Helvetica, Sans-serif;
+    /*text-transform: uppercase;*/
+    font-weight: bold;
+    color: #565656;
+}
+
+#stlpec img {
+	display: block;
+	width: 170px;
+	height: 220px;
+	opacity: 0.6;
+}
+#stlpec img:hover {
+	opacity: 1;
+}
+
+
+#skore {
+	display: block;
+	text-align: center;
+	padding-top: 2px;
+}
+
+#stlpec #skore1 {
+	display: inline;
+	text-align: center;
+
+}
+
+/*
+strankovanie
+*/
+.strankovanie {
+	text-align: center;
+	font: italic 16px 'Trebuchet MS', Georgia, serif;
+}
+.strankovanie a {
+	color: #222222;
+}
+.strankovanie a:hover {
+	text-decoration: underline;
+	color: red;
+	text-transform: bold;
+}
+
+
+
+
+
+
+
+
+
+#reklammm {
+	margin-left: 120px;
+}
+
+/*
+dolna lista
+*/
+.dolna_lista {
+	text-align: center;
+	margin-bottom: 0px;
+}
+.dolna_lista h5 a {
+	text-decoration: none;
+	color: black;
+}
+
+/*
+statistika
+*/
+.pocitadlo {
+	text-align: center;
+	margin: 60px;
+}
+
+.pocitadlo #pocitadlo_typ {
+	display: inline;
+}
+
+/*
+koniec statistika
+*/
+
+
+/*
+prihlas
+*/
+.login_form {
+	text-align: center;
+
+}
+
+
+
+
+/*
+koniec prihlas
+*/
+
+/* Tablet na sirku */
+
+
+
+@media screen and (min-width: 1100px) {
+
+    .prepojenie {
+	position: absolute;
+	margin: 70px 0px 0px 10px;
+}
+.prepojenie #prepoj img {
+	display: inline;
+	margin-bottom: 10px;
+}
+
+}
+
+@media screen and (max-width: 1340px) {
+
+    .prepojenie { display: none;}
+}
+
+td a #atext1 {
+	color: #DF5045;
+	font-family: sans-serif;
+}
+td a #atext1:hover {
+	color: #DF5045;
+	text-decoration: underline;
+
+}
+
+td a #atext2 {
+	color: #3B5998;
+	font-family: sans-serif;
+}
+td a #atext2:hover {
+	color: #2B5998;
+	text-decoration: underline;
+}
+
+
+
+#profil-pravo #stahuj {
+	font-family: "Lucida Sans";
+	font-style:normal;
+	font-size: 18px;
+    color: #464646;
+    vertical-align:middle;
+    display: block;
+    margin-top: -5px;
+}
+#profil-pravo #stahuj img {
+    vertical-align: middle;
+    height: 30px;
+}
+
+.pridaj_form {
+	text-align: center;
+	margin-top: 50px;
+}
+.pridaj_form #pridajText {
+	font-size: 30px;
+	font-family: serif;
+	font-weight: bold;
+	color: #DF5045;
+}
+.pridaj_form form {
+	margin-top: 20px;
+}
+.pridaj_form form #formText {
+	font-size: 20px;
+	font-family: "Lucida Sans Unicode";
+	margin-right: 20px;
+}
+.pridaj_form form input {
+
+}
+
+
+#podmienky {
+	text-align: center;
+	margin-top: 20px;
+
+}
+#podmienky h2 {
+	font-size: 25px;
+	font-family: "Lucida Sans Unicode";
+	color: #DF5045;
+}
+#podmienky .podmienkyText h4 {
+	font-family: "Lucida Sans Unicode";
+	font-size: 18px;
+	font-style:normal;
+	font-weight: normal;
+}
+#podmienky .podmienkyText p {
+	font-family: "Lucida Sans Unicode";
+}
+#podmienky .podmienkyText {
+	width: 700px;
+	text-align: center;
+}
+
+
+#Preskoc {
+	top: -40px;
+	font-size: 18px;
+	color: #DF5045;
+	font-family: sans-serif;
+
+}
+#Preskoc a {
+
+}
+#Preskoc a:hover {
+	text-decoration: underline;
+}
+
+#ukaz_pocitadlo {
+	border: 2px dashed #3265ba;
+	display: block;
+	margin-bottom: 20px;
+}
+
+#ukaz_online {
+	border: 2px dashed #3265ba;
+	margin-bottom: 20px;
+}
+#ukaz_dnes {
+	border: 2px dashed #3265ba;
+	margin-bottom: 20px;
+}
+
+#ukaz_pocitadlo_nove {
+	border: 2px dashed #3265ba;
+	margin-bottom: 20px;
+}
