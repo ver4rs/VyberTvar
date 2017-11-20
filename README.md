@@ -1,7 +1,13 @@
 # VyberTvar
 
-VyberTvar on based FaceMash.
+The project was build only for learning programming.
 
-More as 400 000+ views
+VyberTvar on based **FaceMash**.
 
-Created 2012
+Used Calculation ![ELO Rating](https://en.wikipedia.org/wiki/Elo_rating_system)
+
+Projekt is **LIVE**.
+
+**More as 450 000+ views**
+
+Created **2012**
